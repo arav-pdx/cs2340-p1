@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'moviesstore.apps.MoviesstoreConfig',
     'home',
     'movies',
+    'accounts',
 ]
 
 MIDDLEWARE = [

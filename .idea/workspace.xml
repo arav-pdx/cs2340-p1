@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 6, search feature implemented">
+    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 7, added a search feature to the admin page">
+      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/admin.py" afterDir="false" />
     </list>
     <list id="f91ccdd5-6f3e-4015-90f6-c1c0b06ab402" name="oopsie" comment=":)" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +130,7 @@
       <workItem from="1738100464170" duration="945000" />
       <workItem from="1738258734396" duration="3846000" />
       <workItem from="1738344081924" duration="4978000" />
-      <workItem from="1738460461681" duration="201000" />
+      <workItem from="1738460461681" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
@@ -158,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738355274662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="end of chapter 7, added a search feature to the admin page">
+      <option name="closed" value="true" />
+      <created>1738460723784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738460723784</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +194,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="chapter 5 finished" />
     <MESSAGE value="end of chapter 6, search feature implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="end of chapter 6, search feature implemented" />
+    <MESSAGE value="end of chapter 7, added a search feature to the admin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of chapter 7, added a search feature to the admin page" />
   </component>
 </project>
