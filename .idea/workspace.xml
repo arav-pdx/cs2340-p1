@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="unversioned files too">
+    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system">
+      <change afterPath="$PROJECT_DIR$/cart/templatetags/cart_filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movies/templates/movies/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/movies/templates/movies/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/views.py" afterDir="false" />
     </list>
     <list id="f91ccdd5-6f3e-4015-90f6-c1c0b06ab402" name="oopsie" comment=":)" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,8 @@
       <workItem from="1738100464170" duration="945000" />
       <workItem from="1738258734396" duration="3846000" />
       <workItem from="1738344081924" duration="4978000" />
-      <workItem from="1738460461681" duration="2913000" />
+      <workItem from="1738460461681" duration="3296000" />
+      <workItem from="1738594555767" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738462084927</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="end of chapter 9, added more capabilities to the review system">
+      <option name="closed" value="true" />
+      <created>1738463693347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738463693347</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +221,7 @@
     <MESSAGE value="end of chapter 7, added a search feature to the admin page" />
     <MESSAGE value="end of chapter 8, added a login page and the accounts feature." />
     <MESSAGE value="unversioned files too" />
-    <option name="LAST_COMMIT_MESSAGE" value="unversioned files too" />
+    <MESSAGE value="end of chapter 9, added more capabilities to the review system" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of chapter 9, added more capabilities to the review system" />
   </component>
 </project>
