@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-    </list>
+    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system" />
     <list id="f91ccdd5-6f3e-4015-90f6-c1c0b06ab402" name="oopsie" comment=":)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,7 @@
       <workItem from="1738460461681" duration="3296000" />
       <workItem from="1738594555767" duration="609000" />
       <workItem from="1738631484466" duration="3009000" />
-      <workItem from="1739650529747" duration="1537000" />
+      <workItem from="1739650529747" duration="2290000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
