@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system" />
+    <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/about.html" afterDir="false" />
+    </list>
     <list id="f91ccdd5-6f3e-4015-90f6-c1c0b06ab402" name="oopsie" comment=":)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Arnav\PycharmProjects\cs2340-p1\DjangoProject1\static\img" />
       <recent name="C:\Users\Arav\PycharmProjects\DjangoProject1\DjangoProject1\static\img" />
     </key>
   </component>
@@ -123,7 +128,8 @@
       <workItem from="1738460461681" duration="3296000" />
       <workItem from="1738594555767" duration="609000" />
       <workItem from="1738631484466" duration="3009000" />
-      <workItem from="1739650529747" duration="2290000" />
+      <workItem from="1739650529747" duration="2746000" />
+      <workItem from="1739654886199" duration="1843000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />
