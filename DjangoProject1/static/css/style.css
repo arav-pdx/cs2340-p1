@@ -1,7 +1,7 @@
 .bg-index{
-  background: url("../img/background.jpg") no-repeat fixed;
+  background: url("../img/background1.jpg") no-repeat fixed;
   background-size: 100% auto;
-  background-positon: center;
+  background-position: center;
   min-height: 70vh;
 
 }
