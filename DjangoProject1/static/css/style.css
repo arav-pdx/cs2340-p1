@@ -1,7 +1,9 @@
 .bg-index{
-  background: url("DjangoProject1/static/img/background.jpg") no-repeat
-    fixed;
+  background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
+  background-positon: center;
+  min-height: 70vh;
+
 }
 .navbar a.nav-link {
   color: #FFFEF6 !important;
