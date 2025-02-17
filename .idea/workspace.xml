@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoProject1/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/forgot_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
     </list>
     <list id="f91ccdd5-6f3e-4015-90f6-c1c0b06ab402" name="oopsie" comment=":)" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +129,7 @@
       <workItem from="1738631484466" duration="3009000" />
       <workItem from="1739650529747" duration="2746000" />
       <workItem from="1739654886199" duration="2613000" />
-      <workItem from="1739747232653" duration="2305000" />
+      <workItem from="1739747232653" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary=":)">
       <option name="closed" value="true" />

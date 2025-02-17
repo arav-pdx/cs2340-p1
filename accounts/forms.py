@@ -28,12 +28,11 @@ class CustomUserCreationForm(UserCreationForm):
             )
 
 class CustomUserCreationForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput, validators=[MinLengthValidator(8)]) #No Validation Needed.
+    password = forms.CharField(widget=forms.PasswordInput, validators=[MinLengthValidator(8)])
     confirm_password = forms.CharField(widget=forms.PasswordInput)
     security_answer_1 = forms.CharField(widget=forms.TextInput)
     security_answer_2 = forms.CharField(widget=forms.TextInput)
 
-    # Use a choice field for questions.
     security_question_1 = forms.ChoiceField(choices=[(key, question) for key, question in SECURITY_QUESTIONS.items()], label="Security Question 1")
     security_question_2 = forms.ChoiceField(choices=[(key, question) for key, question in SECURITY_QUESTIONS.items()], label="Security Question 2")
 
@@ -51,9 +50,9 @@ class CustomUserCreationForm(forms.ModelForm):
 
     def save(self, commit=True):
         user = super().save(commit=False)
-        user.set_password(self.cleaned_data["password"])  # No Hashing Now
-        user.security_question_1 = self.cleaned_data['security_question_1']  # Save the question key
-        user.security_question_2 = self.cleaned_data['security_question_2']  # Save the other question key
+        user.set_password(self.cleaned_data["password"])
+        user.security_question_1 = self.cleaned_data['security_question_1']
+        user.security_question_2 = self.cleaned_data['security_question_2']
         if commit:
             user.save()
         return user
@@ -64,5 +63,4 @@ class SecurityQuestionForm(forms.Form):
     answer2 = forms.CharField(label="Answer to Question 2")
 
 class CustomAuthenticationForm(AuthenticationForm):
-    """Custom authentication form to use email instead of username."""
     username = forms.EmailField(label="Email")
