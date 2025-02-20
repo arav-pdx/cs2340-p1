@@ -1,12 +1,10 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.core.validators import MinLengthValidator
 from django.forms.utils import ErrorList
 from django.utils.safestring import mark_safe
 
-from .models import SECURITY_QUESTIONS
-from django import forms
 from .models import CustomUser
-from django.core.exceptions import ValidationError
+from django import forms
 from django.contrib.auth.forms import AuthenticationForm
 
 class CustomErrorList(ErrorList):
@@ -18,49 +16,60 @@ class CustomErrorList(ErrorList):
 
 
 class CustomUserCreationForm(UserCreationForm):
+
+    email = forms.EmailField(required=True)
+
+    class Meta(UserCreationForm.Meta):
+        model = CustomUser
+        fields = UserCreationForm.Meta.fields + ('email',)
+        error_class = None
+
     def __init__(self, *args, **kwargs):
         super(CustomUserCreationForm, self).__init__ (*args, **kwargs)
-        for fieldname in ['username', 'password1',
-        'password2']:
-            self.fields[fieldname].help_text = None
-            self.fields[fieldname].widget.attrs.update(
-                {'class': 'form-control'}
-            )
+        for fieldname in ['username', 'password', 'password2', 'email']:
+            if fieldname in self.fields:
+                self.fields[fieldname].help_text = None
+                self.fields[fieldname].widget.attrs.update(
+                    {'class': 'form-control'}
+                )
 
-class CustomUserCreationForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput, validators=[MinLengthValidator(8)])
-    confirm_password = forms.CharField(widget=forms.PasswordInput)
-    security_answer_1 = forms.CharField(widget=forms.TextInput)
-    security_answer_2 = forms.CharField(widget=forms.TextInput)
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if email:
+            pass
+        return email
 
-    security_question_1 = forms.ChoiceField(choices=[(key, question) for key, question in SECURITY_QUESTIONS.items()], label="Security Question 1")
-    security_question_2 = forms.ChoiceField(choices=[(key, question) for key, question in SECURITY_QUESTIONS.items()], label="Security Question 2")
+class SecurityQuestionForm(forms.Form):
+    answer1 = forms.CharField(label="Answer to Question 1")
+    answer2 = forms.CharField(label="Answer to Question 2")
 
-    class Meta:
-        model = CustomUser
-        fields = ('username', 'email', 'password', 'confirm_password', 'security_question_1', 'security_answer_1', 'security_question_2', 'security_answer_2')
+
+
+class CustomAuthenticationForm(AuthenticationForm):
+    username = forms.CharField(label="Username")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for fieldname in ['username', 'password']:
+            self.fields[fieldname].widget.attrs.update({'class': 'form-control'})
+
+
+class PasswordResetForm(forms.Form):
+    password = forms.CharField(
+        widget=forms.PasswordInput,
+        label="New Password",
+        validators=[MinLengthValidator(8)],
+        help_text="Password must be at least 8 characters long."
+    )
+    confirm_password = forms.CharField(
+        widget=forms.PasswordInput,
+        label="Confirm New Password"
+    )
 
     def clean(self):
         cleaned_data = super().clean()
         password = cleaned_data.get("password")
         confirm_password = cleaned_data.get("confirm_password")
         if password and confirm_password and password != confirm_password:
-            raise ValidationError("Passwords do not match.")
+            raise forms.ValidationError("Passwords do not match.")
         return cleaned_data
-
-    def save(self, commit=True):
-        user = super().save(commit=False)
-        user.set_password(self.cleaned_data["password"])
-        user.security_question_1 = self.cleaned_data['security_question_1']
-        user.security_question_2 = self.cleaned_data['security_question_2']
-        if commit:
-            user.save()
-        return user
-
-
-class SecurityQuestionForm(forms.Form):
-    answer1 = forms.CharField(label="Answer to Question 1")
-    answer2 = forms.CharField(label="Answer to Question 2")
-
-class CustomAuthenticationForm(AuthenticationForm):
-    username = forms.EmailField(label="Email")

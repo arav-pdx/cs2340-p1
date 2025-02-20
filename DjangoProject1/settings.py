@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -22,7 +21,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-bb=s6t&3j6e&ko7yj1!l*5s8_qvzrcmbhz2!g+ibou)lntnxwe'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -42,6 +40,7 @@ INSTALLED_APPS = [
     'movies',
     'accounts',
     'cart',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +69,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Default Django auth backend
 ]
 
 WSGI_APPLICATION = 'DjangoProject1.wsgi.application'
@@ -134,3 +137,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'aravshahphotos@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'cupu qmra fule thab'  # Your Gmail App Password (NOT your main password)
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'aravshahphotos@gmail.com'

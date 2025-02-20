@@ -1,0 +1,394 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"510445ea-2245-4659-8ae3-1d1662db122a\" name=\"Changes\" comment=\"end of chapter 9, added more capabilities to the review system\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/DjangoProject1/templates/base.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/DjangoProject1/templates/base.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/home/templates/home/about.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/home/templates/home/about.html\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"f91ccdd5-6f3e-4015-90f6-c1c0b06ab402\" name=\"oopsie\" comment=\":)\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DjangoConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\">\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;arav-shah-1&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/arav-pdx/cs2340-p1.git&quot;,\r\n    &quot;accountId&quot;: &quot;11f5761d-1ffe-456e-9206-c844bb96a7ad&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2sH75OkRk0K8Lo1nMNk7k0GpX2b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;Django Server.DjangoProject1.executor&quot;: &quot;Run&quot;,\r\n    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,\r\n    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Arnav\\PycharmProjects\\cs2340-p1\\DjangoProject1\\static\\img\" />\r\n      <recent name=\"C:\\Users\\Arav\\PycharmProjects\\DjangoProject1\\DjangoProject1\\static\\img\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"DjangoProject1\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"moviesstore\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n        <env name=\"DJANGO_SETTINGS_MODULE\" value=\"DjangoProject1.settings\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220\" />\r\n        <option value=\"bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"510445ea-2245-4659-8ae3-1d1662db122a\" name=\"Changes\" comment=\"\" />\r\n      <created>1738100463306</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1738100463306</updated>\r\n      <workItem from=\"1738100464170\" duration=\"945000\" />\r\n      <workItem from=\"1738258734396\" duration=\"3846000\" />\r\n      <workItem from=\"1738344081924\" duration=\"4978000\" />\r\n      <workItem from=\"1738460461681\" duration=\"3296000\" />\r\n      <workItem from=\"1738594555767\" duration=\"609000\" />\r\n      <workItem from=\"1738631484466\" duration=\"3009000\" />\r\n      <workItem from=\"1739650529747\" duration=\"2746000\" />\r\n      <workItem from=\"1739654886199\" duration=\"1843000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\":)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738351941210</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738351941210</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738351981906</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738351981906</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"chapter 5 finished\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738352418925</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738352418925</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"end of chapter 6, search feature implemented\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738355274662</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738355274662</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"end of chapter 7, added a search feature to the admin page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738460723784</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738460723784</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"end of chapter 8, added a login page and the accounts feature.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738462055191</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738462055191</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"unversioned files too\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738462084927</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738462084927</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"end of chapter 9, added more capabilities to the review system\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738463693347</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738463693347</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\":)\" />\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"chapter 5 finished\" />\r\n    <MESSAGE value=\"end of chapter 6, search feature implemented\" />\r\n    <MESSAGE value=\"end of chapter 7, added a search feature to the admin page\" />\r\n    <MESSAGE value=\"end of chapter 8, added a login page and the accounts feature.\" />\r\n    <MESSAGE value=\"unversioned files too\" />\r\n    <MESSAGE value=\"end of chapter 9, added more capabilities to the review system\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"end of chapter 9, added more capabilities to the review system\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b1e2f620af9c3c0ac473c0748b41f0141591edcb)
++++ b/.idea/workspace.xml	(date 1739751749918)
+@@ -5,6 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="510445ea-2245-4659-8ae3-1d1662db122a" name="Changes" comment="end of chapter 9, added more capabilities to the review system">
++      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/forgot_password.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/security_questions.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/DjangoProject1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject1/templates/base.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/home/templates/home/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/about.html" afterDir="false" />
+@@ -36,12 +39,12 @@
+     &quot;assignee&quot;: &quot;arav-shah-1&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/arav-pdx/cs2340-p1.git&quot;,
+-    &quot;accountId&quot;: &quot;11f5761d-1ffe-456e-9206-c844bb96a7ad&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/arav-pdx/cs2340-p1.git",
++    "accountId": "5e7371f9-83c1-47a3-9f8b-1ffd6024181c"
++  }
++}]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;customColor&quot;: &quot;&quot;,
+   &quot;associatedIndex&quot;: 7
+@@ -75,7 +78,6 @@
+ }</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\Arnav\PycharmProjects\cs2340-p1\DjangoProject1\static\img" />
+       <recent name="C:\Users\Arav\PycharmProjects\DjangoProject1\DjangoProject1\static\img" />
+     </key>
+   </component>
+@@ -127,9 +129,8 @@
+       <workItem from="1738344081924" duration="4978000" />
+       <workItem from="1738460461681" duration="3296000" />
+       <workItem from="1738594555767" duration="609000" />
+-      <workItem from="1738631484466" duration="3009000" />
+-      <workItem from="1739650529747" duration="2746000" />
+-      <workItem from="1739654886199" duration="1843000" />
++      <workItem from="1738631484466" duration="2673000" />
++      <workItem from="1739750878285" duration="832000" />
+     </task>
+     <task id="LOCAL-00001" summary=":)">
+       <option name="closed" value="true" />
+@@ -202,6 +203,21 @@
+     <option name="version" value="3" />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
++    <option name="RECENT_FILTERS">
++      <map>
++        <entry key="Branch">
++          <value>
++            <list>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="main" />
++                </option>
++              </RecentGroup>
++            </list>
++          </value>
++        </entry>
++      </map>
++    </option>
+     <option name="TAB_STATES">
+       <map>
+         <entry key="MAIN">
+@@ -221,6 +237,6 @@
+     <MESSAGE value="end of chapter 8, added a login page and the accounts feature." />
+     <MESSAGE value="unversioned files too" />
+     <MESSAGE value="end of chapter 9, added more capabilities to the review system" />
+-    <option name="LAST_COMMIT_MESSAGE" value="end of chapter 9, added more capabilities to the review system" />
++    <option name="LAST_COMMIT_MESSAGE" value="" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: accounts/templates/accounts/forgot_password.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/accounts/templates/accounts/forgot_password.html b/accounts/templates/accounts/forgot_password.html
+new file mode 100644
+--- /dev/null	(date 1739744041361)
++++ b/accounts/templates/accounts/forgot_password.html	(date 1739744041361)
+@@ -0,0 +1,118 @@
++<!DOCTYPE html>
++<html>
++  {% load static %}
++  <head>
++    <title>{{ template_data.title }}</title>
++    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
++    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
++    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
++    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
++    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++  </head>
++
++  <body>
++    <!-- Header -->
++    <nav class="p-3 navbar navbar-dark bg-dark navbar-expand-lg">
++      <div class="container">
++        <a class="navbar-brand" href="{% url 'home.index' %}">
++          <img src="{% static 'img/logo1.png' %}" alt="logo" height="40" />
++        </a>
++        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
++          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
++          <span class="navbar-toggler-icon"></span>
++        </button>
++        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
++          <div class="navbar-nav ms-auto navbar-ml">
++            <a class="nav-link" href="{% url 'home.about' %}">About</a>
++            <a class="nav-link" href="{% url 'movies.index' %}">Movies</a>
++            <a class="nav-link" href="{% url 'cart.index' %}">Cart</a>
++            <div class="vr bg-white mx-2 d-none d-lg-block"></div>
++            {% if user.is_authenticated %}
++                <a class="nav-link" href="{% url 'accounts.orders' %}">Orders</a>
++                <a class="nav-link" href="{% url 'accounts.logout' %}">Logout ({{ user.username }})</a>
++            {% else %}
++                <a class="nav-link" href="{% url 'accounts.login' %}">Login</a>
++                <a class="nav-link" href="{% url 'accounts.signup' %}">Sign Up</a>
++            {% endif %}
++          </div>
++        </div>
++      </div>
++    </nav>
++    <!-- Header -->
++
++    <div class="container mt-5">
++      <div class="row justify-content-center">
++        <div class="col-md-6">
++          <div class="card shadow p-4 rounded">
++            <div class="card-body">
++              <h2 class="text-center">{{ template_data.title }}</h2>
++              <hr>
++              {% if messages %}
++                <div class="alert alert-info">
++                  <ul class="mb-0">
++                    {% for message in messages %}
++                      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
++                    {% endfor %}
++                  </ul>
++                </div>
++              {% endif %}
++              <form method="post">
++                {% csrf_token %}
++                <div class="mb-3">
++                  <label for="email" class="form-label">Email:</label>
++                  <input type="email" id="email" name="email" class="form-control" required>
++                </div>
++                <div class="text-center">
++                  <button type="submit" class="btn btn-dark">Submit</button>
++                </div>
++              </form>
++              <div class="mt-3 text-center">
++                <p><a href="{% url 'accounts.login' %}">Login</a></p>
++                <p>Don't have an account? <a href="{% url 'accounts.signup' %}">Register</a></p>
++              </div>
++            </div>
++          </div>
++        </div>
++      </div>
++    </div>
++
++    <!-- Footer -->
++    <section class="p-3 ms-footer d-none d-md-block">
++      <div class="container">
++        <div class="row mt-3 text-white">
++          <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
++            <b>MOVIES STORE</b>
++            <hr />
++            <p>Welcome to the GT Movies Store, your premier online destination for an adventure like no other! Dive into the world of movies from the comfort of your own home with a collection of user-friendly and immersive movies curated by GT Students!</p>
++          </div>
++          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
++            <b>LINKS</b>
++            <hr />
++            <p><a class="nav-link" href="{% url 'home.about' %}">About</a></p>
++          </div>
++          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
++            <b>CONTACT</b>
++            <hr />
++            <p><i class="fas fa-home me-2"></i> 150-2345 Tokyo-to, Japan</p>
++            <p><i class="fas fa-envelope me-2"></i> info@moviesstore.com</p>
++            <p><i class="fas fa-phone me-2"></i> +81 03-3333-3333</p>
++          </div>
++        </div>
++      </div>
++    </section>
++    <section class="p-3 ms-footer-bottom bg-dark">
++      <div class="container d-flex justify-content-between">
++        <div class="me-5 text-white">
++          <span>DESIGNED BY <a href="https://www.x.com/danielgarax" target="_blank">DANIEL CORREA</a> &
++            <a href="https://www.x.com/greglim81" target="_blank">GREG LIM</a>
++          </span>
++        </div>
++        <div class="text-white">
++          <span>© Copyright - 2024</span>
++        </div>
++      </div>
++    </section>
++    <!-- Footer -->
++  </body>
++</html>
+Index: accounts/migrations/0001_initial.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/accounts/migrations/0001_initial.py b/accounts/migrations/0001_initial.py
+new file mode 100644
+--- /dev/null	(date 1739744041361)
++++ b/accounts/migrations/0001_initial.py	(date 1739744041361)
+@@ -0,0 +1,48 @@
++# Generated by Django 5.1.5 on 2025-02-16 01:37
++
++import django.contrib.auth.models
++import django.contrib.auth.validators
++import django.utils.timezone
++from django.db import migrations, models
++
++
++class Migration(migrations.Migration):
++
++    initial = True
++
++    dependencies = [
++        ('auth', '0012_alter_user_first_name_max_length'),
++    ]
++
++    operations = [
++        migrations.CreateModel(
++            name='CustomUser',
++            fields=[
++                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
++                ('password', models.CharField(max_length=128, verbose_name='password')),
++                ('last_login', models.DateTimeField(blank=True, null=True, verbose_name='last login')),
++                ('is_superuser', models.BooleanField(default=False, help_text='Designates that this user has all permissions without explicitly assigning them.', verbose_name='superuser status')),
++                ('username', models.CharField(error_messages={'unique': 'A user with that username already exists.'}, help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=150, unique=True, validators=[django.contrib.auth.validators.UnicodeUsernameValidator()], verbose_name='username')),
++                ('first_name', models.CharField(blank=True, max_length=150, verbose_name='first name')),
++                ('last_name', models.CharField(blank=True, max_length=150, verbose_name='last name')),
++                ('is_staff', models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.', verbose_name='staff status')),
++                ('is_active', models.BooleanField(default=True, help_text='Designates whether this user should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
++                ('date_joined', models.DateTimeField(default=django.utils.timezone.now, verbose_name='date joined')),
++                ('email', models.EmailField(max_length=254, unique=True)),
++                ('security_question_1', models.CharField(blank=True, choices=[('1', '1'), ('2', '2')], max_length=1, null=True)),
++                ('security_answer_1', models.CharField(blank=True, max_length=255, null=True)),
++                ('security_question_2', models.CharField(blank=True, choices=[('1', '1'), ('2', '2')], max_length=1, null=True)),
++                ('security_answer_2', models.CharField(blank=True, max_length=255, null=True)),
++                ('groups', models.ManyToManyField(blank=True, help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.', related_name='customuser_set', related_query_name='user', to='auth.group', verbose_name='groups')),
++                ('user_permissions', models.ManyToManyField(blank=True, help_text='Specific permissions for this user.', related_name='customuser_set', related_query_name='user', to='auth.permission', verbose_name='user permissions')),
++            ],
++            options={
++                'verbose_name': 'user',
++                'verbose_name_plural': 'users',
++                'abstract': False,
++            },
++            managers=[
++                ('objects', django.contrib.auth.models.UserManager()),
++            ],
++        ),
++    ]
+Index: accounts/templates/accounts/security_questions.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/accounts/templates/accounts/security_questions.html b/accounts/templates/accounts/security_questions.html
+new file mode 100644
+--- /dev/null	(date 1739744041361)
++++ b/accounts/templates/accounts/security_questions.html	(date 1739744041361)
+@@ -0,0 +1,28 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <title>{{ template_data.title }}</title>
++</head>
++<body>
++    <h1>{{ template_data.title }}</h1>
++
++    {% if messages %}
++        <ul class="messages">
++            {% for message in messages %}
++                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
++            {% endfor %}
++        </ul>
++    {% endif %}
++
++    <form method="post">
++        {% csrf_token %}
++        <p>Question 1: {{ question1 }}</p>
++        {{ template_data.form.answer1.as_widget }}
++        <br><br>
++        <p>Question 2: {{ question2 }}</p>
++        {{ template_data.form.answer2.as_widget }}
++        <br><br>
++        <button type="submit">Submit Answers</button>
++    </form>
++</body>
++</html>
+\ No newline at end of file
+Index: home/templates/home/about.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'base.html' %}\r\n{% block content %}\r\n{% load static %}\r\n<div class=\"p-3\">\r\n  <div class=\"container\">\r\n    <div class=\"row mt-3\">\r\n      <div class=\"col-md-6 mx-auto mb-3\">\r\n        <h2>About</h2>\r\n        <hr />\r\n        <p>\r\n           At GT Movies Store, we curate a digital library\r\n           of popular movies span countless genres, ensuring that\r\n           we have something for every movie lover. Browse our\r\n           collection of films, including\r\n           latest releases, timeless classics, and hidden\r\n           gems. With just a few clicks, you can rent or\r\n           purchase your favorite titles and instantly\r\n           stream them in high-definition quality.\r\n        </p>\r\n        <p>\r\n          Our digital platform gives you the flexibility to\r\n          watch movies on any of your devices, whether you use\r\n          a TV, tablet, or smartphone. Our intuitive\r\n          search, recommendation, and review features make\r\n          finding your next movie night pick as easy as ever.\r\n        </p>\r\n      </div>\r\n      <div class=\"col-md-6 mx-auto mb-3 text-center\">\r\n        <img src=\"{% static 'img/about1.jpg' %}\"\r\n             class=\"max-width-100\"\r\n             alt=\"about\" />\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n{% endblock content %}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/home/templates/home/about.html b/home/templates/home/about.html
+--- a/home/templates/home/about.html	(revision b1e2f620af9c3c0ac473c0748b41f0141591edcb)
++++ b/home/templates/home/about.html	(date 1739744265127)
+@@ -8,25 +8,26 @@
+         <h2>About</h2>
+         <hr />
+         <p>
+-           At GT Movies Store, we curate a digital library
+-           of popular movies span countless genres, ensuring that
+-           we have something for every movie lover. Browse our
+-           collection of films, including
++           At GT Movies Store, we offer a vast digital library
++           that spans across genres, ensuring there's
++           something for every movie lover. Browse our
++           extensive collection of films, including the
+            latest releases, timeless classics, and hidden
+            gems. With just a few clicks, you can rent or
+            purchase your favorite titles and instantly
+            stream them in high-definition quality.
+         </p>
+         <p>
+-          Our digital platform gives you the flexibility to
+-          watch movies on any of your devices, whether you use
+-          a TV, tablet, or smartphone. Our intuitive
+-          search, recommendation, and review features make
+-          finding your next movie night pick as easy as ever.
++          Discover the convenience of our digital platform,
++          where you have the flexibility to watch movies
++          on your preferred device, whether it's a smart
++          TV, tablet, or smartphone. With our intuitive
++          search and recommendation features, finding your
++          next movie night pick has never been easier.
+         </p>
+       </div>
+       <div class="col-md-6 mx-auto mb-3 text-center">
+-        <img src="{% static 'img/about1.jpg' %}"
++        <img src="{% static 'img/about.jpg' %}"
+              class="max-width-100"
+              alt="about" />
+       </div>
+Index: DjangoProject1/templates/base.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n  {% load static %}\r\n  <head>\r\n    <title>{{ template_data.title }}</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" crossorigin=\"anonymous\">\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\">\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\"crossorigin=\"anonymous\"></script>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"{% static 'css/style.css' %}\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n  </head>\r\n\r\n  <body>\r\n    <!-- Header -->\r\n    <nav class=\"p-3 navbar navbar-dark bg-dark navbar-expand-lg\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" href=\"{% url 'home.index' %}\">\r\n          <img src=\"{% static 'img/logo1.png' %}\" alt=\"logo\" height=\"40\" />\r\n        </a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavAltMarkup\"\r\n          aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n          <div class=\"navbar-nav ms-auto navbar-ml\">\r\n            <a class=\"nav-link\" href=\"{% url 'home.about' %}\">About</a>\r\n            <a class=\"nav-link\" href=\"{% url 'movies.index' %}\">Movies</a>\r\n            <a class=\"nav-link\" href=\"{% url 'cart.index' %}\">Cart</a>\r\n            <div class=\"vr bg-white mx-2 d-none d-lg-block\"></div>\r\n            {% if user.is_authenticated %}\r\n                <a class=\"nav-link\"\r\n              href=\"{% url 'accounts.orders' %}\">Orders\r\n            </a>\r\n\r\n            <a class=\"nav-link\" href=\"{% url 'accounts.logout' %}\">Logout ({{ user.username }})</a>\r\n            {% else %}\r\n            <a class=\"nav-link\" href=\"{% url 'accounts.login' %}\">Login</a>\r\n            <a class=\"nav-link\" href=\"{% url 'accounts.signup' %}\">Sign Up</a>\r\n            {% endif %}\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n    <!-- Header -->\r\n\r\n    <div>\r\n      {% block content %}\r\n      {% endblock content %}\r\n    </div>\r\n\r\n    <!-- Footer -->\r\n    <section class=\"p-3 ms-footer d-none d-md-block\">\r\n      <div class=\"container\">\r\n        <div class=\"row mt-3 text-white\">\r\n          <div class=\"col-md-6 col-lg-6 col-xl-6 mx-auto mb-4\">\r\n            <b>MOVIES STORE</b>\r\n            <hr />\r\n            <p>Welcome to GT Movies Store, your #1 online destination for to find movies curated by current GT students.\r\n              Dive into the world of movies from the comfort of your own home with our user-friendly\r\n              and immersive online movie store, featuring popular releases across countless genres.</p>\r\n          </div>\r\n          <div class=\"col-md-3 col-lg-3 col-xl-3 mx-auto mb-4\">\r\n            <b>LINKS</b>\r\n            <hr />\r\n            <p><a class=\"nav-link\" href=\"{% url 'home.about' %}\">About</a></p>\r\n          </div>\r\n          <div class=\"col-md-3 col-lg-3 col-xl-3 mx-auto mb-4\">\r\n            <b>CONTACT</b>\r\n            <hr />\r\n            <p><i class=\"fas fa-home me-2\"></i> 150-2345 Tokyo-to, Japan</p>\r\n            <p><i class=\"fas fa-envelope me-2\"></i> info@moviesstore.com</p>\r\n            <p><i class=\"fas fa-phone me-2\"></i> +81 03-3333-3333</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n    <section class=\"p-3 ms-footer-bottom bg-dark\">\r\n      <div class=\"container d-flex justify-content-between\">\r\n        <div class=\"me-5 text-white\">\r\n          <span>DESIGNED BY <a href=\"https://www.x.com/danielgarax\" target=\"_blank\">DANIEL CORREA</a> &\r\n            <a href=\"https://www.x.com/greglim81\" target=\"_blank\">GREG LIM</a>\r\n          </span>\r\n        </div>\r\n        <div class=\"text-white\">\r\n          <span>© Copyright - 2024</span>\r\n        </div>\r\n      </div>\r\n    </section>\r\n    <!-- Footer -->\r\n  </body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/DjangoProject1/templates/base.html b/DjangoProject1/templates/base.html
+--- a/DjangoProject1/templates/base.html	(revision b1e2f620af9c3c0ac473c0748b41f0141591edcb)
++++ b/DjangoProject1/templates/base.html	(date 1739744294282)
+@@ -16,7 +16,7 @@
+     <nav class="p-3 navbar navbar-dark bg-dark navbar-expand-lg">
+       <div class="container">
+         <a class="navbar-brand" href="{% url 'home.index' %}">
+-          <img src="{% static 'img/logo1.png' %}" alt="logo" height="40" />
++          <img src="{% static 'img/logo.png' %}" alt="logo" height="40" />
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+@@ -56,9 +56,9 @@
+           <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
+             <b>MOVIES STORE</b>
+             <hr />
+-            <p>Welcome to GT Movies Store, your #1 online destination for to find movies curated by current GT students.
+-              Dive into the world of movies from the comfort of your own home with our user-friendly
+-              and immersive online movie store, featuring popular releases across countless genres.</p>
++            <p>Welcome to Movies Store, your premier online destination for a cinematic
++              adventure like no other! Dive into the world of movies from the comfort of your own home with our user-friendly
++              and immersive online movie store.</p>
+           </div>
+           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+             <b>LINKS</b>

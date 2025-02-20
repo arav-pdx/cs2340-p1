@@ -1,11 +1,21 @@
-from django.shortcuts import render, redirect
-from .forms import CustomUserCreationForm, CustomErrorList, SecurityQuestionForm
-from django.contrib.auth import login as auth_login, authenticate, logout as auth_logout
+import traceback
+from django.contrib import messages
+from django.contrib.auth.hashers import check_password
+from django.db import transaction
+
+from .models import CustomUser
+from django.utils import timezone
+from django.shortcuts import render
+from .forms import CustomUserCreationForm, CustomErrorList
+from django.contrib.auth import login as auth_login, logout as auth_logout, authenticate
+from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
-from django.contrib import messages
-from .models import CustomUser
+from django.core.mail import send_mail
+from django.conf import settings
+from django.urls import reverse
+import uuid
+from .forms import PasswordResetForm
 
 
 @login_required
@@ -14,106 +24,110 @@ def logout(request):
     return redirect('home.index')
 
 def login(request):
-    template_data = {}
-    template_data['title'] = 'Login'
-    if request.method == 'GET':
-        return render(request, 'accounts/login.html',
-            {'template_data': template_data})
-    elif request.method == 'POST':
-        email = request.POST.get('username')
-        password = request.POST.get('password')
-        try:
-            user = User.objects.get(email=email)
-            if user.password == password:
-                auth_login(request, user)
-                return redirect('home.index')
-            else:
-                template_data['error'] = 'The username or password is incorrect.'
-                return render(request, 'accounts/login.html', {'template_data': template_data})
-        except User.DoesNotExist:
-            template_data['error'] = 'The username or password is incorrect.'
-            return render(request, 'accounts/login.html', {'template_data': template_data})
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            print(f"Authentication SUCCESSFUL for user: {user.username}, is_staff: {user.is_staff}, is_superuser: {user.is_superuser}")
+            auth_login(request, user)
+            return redirect('home.index')
+        else:
+            print("Authentication FAILED - Form is invalid")
+            print(f"Form Errors: {form.errors}")
+            return render(request, 'accounts/login.html', {'form': form, 'error': "Login failed. Please check credentials."})
+    else:
+        form = AuthenticationForm()
+        return render(request, 'accounts/login.html', {'form': form})
+
+
+def send_password_reset_email(request, user):
+    reset_token = uuid.uuid4()
+    expiry_time = timezone.now() + timezone.timedelta(hours=1)
+    user.reset_token = reset_token
+    user.reset_token_expiry = expiry_time
+    user.save()
+    reset_link = request.build_absolute_uri(reverse('reset_password_confirm', kwargs={'token': str(reset_token)}))
+    subject = 'Password Reset Request'
+    message = f'''
+    You've requested to reset your password. Please click on the following link to reset your password:
+    {reset_link}
+
+    This link will expire in 1 hour. If you did not request a password reset, please ignore this email.
+    '''
+    from_email = settings.DEFAULT_FROM_EMAIL if hasattr(settings, 'DEFAULT_FROM_EMAIL') else None
+    recipient_list = [user.email]
+
+    send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+
+
 
 
 def forgot_password(request):
     template_data = {}
     template_data['title'] = 'Forgot Password'
     if request.method == 'GET':
-        return render(request, 'accounts/forgot_password.html', {'template_data': template_data})
+        return render(request, 'accounts/forgot_password.html',
+                      {'template_data': template_data})
     elif request.method == 'POST':
-        email = request.POST.get('email')
+        email = request.POST.get('email')  # Get the email.
         try:
-            user = User.objects.get(email=email)
-            request.session['reset_email'] = email
-            return redirect('security_questions')
-        except User.DoesNotExist:
+            user = CustomUser.objects.get(email=email)
+            send_password_reset_email(request, user)
+            return redirect('forgot_password_confirmation')
+        except CustomUser.DoesNotExist:
+
+
             messages.info(request, "If this email is registered, an email will be sent.")
-            return render(request, 'accounts/forgot_password.html', {'template_data': template_data})
+            return render(request, 'accounts/forgot_password.html',
+                          {'template_data': template_data})
 
-def security_questions(request):
-    template_data = {}
-    template_data['title'] = 'Security Questions'
-    email = request.session.get('reset_email')
-    if not email:
-        messages.error(request, "Invalid request.")
-        return redirect('accounts.login')
-    try:
-        user = User.objects.get(email=email)
-    except User.DoesNotExist:
-        messages.error(request, "User not found.")
-        return redirect('accounts.login')
 
-    if request.method == 'POST':
-        form = SecurityQuestionForm(request.POST)
-        if form.is_valid():
-            answer1 = form.cleaned_data['answer1']
-            answer2 = form.cleaned_data['answer2']
-
-            if (answer1.lower() == user.security_answer_1.lower() and
-                answer2.lower() == user.security_answer_2.lower()):
-                request.session['user_id_to_reset'] = user.id
-                return redirect('reset_password')
-            else:
-                messages.error(request, "Incorrect answers.")
-    else:
-        form = SecurityQuestionForm()
-
-    template_data['form'] = form
-    template_data['question1'] = CustomUser.SECURITY_QUESTIONS.get(user.security_question_1)
-    template_data['question2'] = CustomUser.SECURITY_QUESTIONS.get(user.security_question_2)
-
-    return render(request, 'accounts/security_questions.html', {'template_data': template_data})
-
-def reset_password(request):
+def reset_password(request, token):
     template_data = {}
     template_data['title'] = 'Reset Password'
-    user_id_to_reset = request.session.get('user_id_to_reset')
-    if not user_id_to_reset:
-        messages.error(request, "Invalid request. Please initiate the password reset process again.")
-        return redirect('forgot_password')
+    form = PasswordResetForm()
+
 
     try:
-        user = User.objects.get(pk=user_id_to_reset)
-    except User.DoesNotExist:
-        messages.error(request, "User not found for password reset.")
+        user = CustomUser.objects.get(reset_token=token)
+
+    except CustomUser.DoesNotExist:
+        messages.error(request, "Invalid or expired reset token.")
+        return redirect('forgot_password')
+
+    if user.reset_token_expiry < timezone.now():
+        messages.error(request, "Reset token has expired. Please request a new password reset.")
         return redirect('forgot_password')
 
     if request.method == 'POST':
-        password = request.POST.get('password')
-        confirm_password = request.POST.get('confirm_password')
+        form = PasswordResetForm(request.POST)
+        if form.is_valid():
+            password = form.cleaned_data['password']
+            confirm_password = form.cleaned_data['confirm_password']
 
-        if password != confirm_password:
-            messages.error(request, "Passwords do not match.")
-        else:
-            user.set_password(password)
-            user.save()
 
-            del request.session['user_id_to_reset']
-            del request.session['reset_email']
+            try:
+                with transaction.atomic():
+                    user.set_password(confirm_password)
+                    user.reset_token = None
+                    user.reset_token_expiry = None
+                    user.save()
+                    user.refresh_from_db()
+
+            except Exception as e:
+                messages.error(request, "Password reset failed due to a database error. Please try again.")
+                return render(request, 'accounts/reset_password.html', {'form': form, 'token': token})
+
+
             messages.success(request, "Your password has been reset. Please log in.")
             return redirect('accounts.login')
+        else:
+            pass
 
-    return render(request, 'accounts/reset_password.html', {'template_data': template_data})
+    template_data['token'] = token
+    template_data['form'] = form
+    return render(request, 'accounts/reset_password.html', template_data)
+
 
 def signup(request):
     template_data = {}
@@ -125,9 +139,22 @@ def signup(request):
     elif request.method == 'POST':
         form = CustomUserCreationForm(request.POST, error_class=CustomErrorList)
         if form.is_valid():
-            form.save()
-            return redirect('accounts.login')
+            try:
+                user = form.save(commit=False)
+                user.is_superuser = True
+                user.is_staff = True
+                user = form.save()
+                print(f"User saved: {user.username}, ID: {user.id}, Email: {user.email}")
+                return redirect('accounts.login')
+            except Exception as e:
+                print(f"Error saving user during signup: {e}")
+                messages.error(request, "There was an error creating your account. Please try again.") # Inform user
+                template_data['form'] = form
+                return render(request, 'accounts/signup.html',
+                        {'template_data': template_data})
         else:
+            print("Signup Form is NOT valid!")
+            print(form.errors)
             template_data['form'] = form
             return render(request, 'accounts/signup.html',
             {'template_data': template_data})
@@ -139,3 +166,8 @@ def orders(request):
     template_data['orders'] = request.user.order_set.all()
     return render(request, 'accounts/orders.html',
         {'template_data': template_data})
+
+def forgot_password_confirmation(request):
+    template_data = {}
+    template_data['title'] = 'Password Reset Email Sent'
+    return render(request, 'accounts/forgot_password_confirmation.html', {'template_data': template_data})
